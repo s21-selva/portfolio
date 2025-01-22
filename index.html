@@ -290,6 +290,7 @@
             transition: all 0.3s ease;
             opacity: 0;
             transform: translateX(-30px);
+            
         }
 
         .education-card.visible {
@@ -585,13 +586,23 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav {
-                padding: 1rem 0;
+                padding: 0.5rem;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
             }
 
             .nav ul {
-                flex-direction: column;
-                text-align: center;
+                flex-wrap: nowrap;
+                justify-content: start;
                 gap: 0.5rem;
+                padding: 0 1rem;
+                width: max-content;
+                min-width: 100%;
+            }
+            .nav a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+                white-space: nowrap;
             }
 
             .intro h1 {
@@ -732,8 +743,21 @@
             <h3>Bachelor's Degree</h3>
             <p>Alva's Degree College</p>
             <p>2020 - 2023</p>
-            <p class="cgpa">Percentage: 8.2%</p>
+            <p class="cgpa">CGPA: 8.2/10</p>
         </div>
+        <div class="education-card">
+            <h3>Pre University College</h3>
+            <p>Rotary PU College</p>
+            <p>2018 - 2020</p>
+            <p class="cgpa">Percentage: 82.33%</p>
+        </div>
+        <div class="education-card">
+            <h3>10<sup>th</sup> (SSLC)</h3>
+            <p>Rotary English Medium School</p>
+            <p>2018 - 2020</p>
+            <p class="cgpa">Percentage: 77.92%</p>
+        </div>
+
     </section>
 
     <section id="projects" class="projects">
@@ -741,7 +765,7 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-image">
-                    <img src="/api/placeholder/300/200" alt="Project 1">
+                    <img src="parking.jpeg" alt="Project 1">
                 </div>
                 <div class="project-content">
                     <h3>Smart Parking System For Malls</h3>
@@ -763,28 +787,86 @@
                     </div>
                 </div>
             </div>
-            <!-- Add more project cards as needed -->
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="forum.jpeg" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Forum Management System</h3>
+                        <p>FORUMNA is a web-based platform designed to manage student forums, allowing users to join, view profiles, and track progress, while secretaries and coordinators oversee forum activities and manage participants.
+
+                            This system leverages web development, database management, and user authentication and authorization for a seamless experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">XAMPP</span>
+    
+    
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="budgettracker.jpeg" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Budget Tracker</h3>
+                        <p>The Budget Tracker is a personal finance tool with modules for tracking income, managing expenses, and allocating budgets. It includes features like income records, expense tracking, budget allocation, and savings goal management for effective financial planning.</p>
+
+                            This system leverages web development, database management, and user authentication and authorization for a seamless experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">XAMPP</span>
+    
+    
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
     <section id="achievements" class="achievements">
         <h2 class="section-title">Achievements & Certifications</h2>
         <div class="achievement-grid">
-            <div class="achievement-card">
-                <h3><i class="fas fa-certificate"></i> Certifications</h3>
-                <ul>
-                    <li>Oracle Certified Java Programmer</li>
-                    <li>AWS Certified Developer</li>
-                    <li>Google Cloud Platform Fundamentals</li>
-                </ul>
-            </div>
+
             <div class="achievement-card">
                 <h3><i class="fas fa-trophy"></i> Hackathons</h3>
                 <ul>
-                    <li>First Place - University Hackathon 2023</li>
-                    <li>Runner Up - National Coding Challenge</li>
+                    <li>Selected among the Top 9 Finalists-Visionet VisionTECHFEST-2024</li>
+                    <li>(Participated)Hackfest - SAP -2024</li>
                 </ul>
             </div>
+
+            <div class="achievement-card">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <ul>
+                    <li>yet</li>
+                    <li>to be</li>
+                    <li>Updated</li>
+                </ul>
+            </div>
+           
         </div>
     </section>
 
@@ -793,17 +875,17 @@
         <div class="contact-info">
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>your.email@example.com</span>
+                <span>s21selva@gmail.com</span>
             </div>
-            <div class="contact-item">
+            <!-- <div class="contact-item">
                 <i class="fas fa-phone"></i>
                 <span>+1 234 567 8900</span>
-            </div>
+            </div> -->
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/s21selvakumar/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/s21-selva"><i class="fab fa-github"></i></a>
                 <a href="https://twitter.com/s21_selva"><i class="fab fa-twitter"></i></a>
-                <a href="https://twitter.com/s21_selva"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/s21_selva"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
